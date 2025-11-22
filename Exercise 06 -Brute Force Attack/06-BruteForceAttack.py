@@ -7,10 +7,13 @@ max_attempts = 5
 
 # Use a while loop to repeatedly ask the user for the password
 while login == 0 and attempts < max_attempts:
+    # Ask the user to input their password
     password = int(input("Please enter your password: "))
+    # If the inputted password is correct then update login variable to print the appropriate message
     if password == correct_password:
         login = login + 1
     else:
+        # After every attempt, update attempts and remain variable
         attempts = attempts + 1
         remain = max_attempts - attempts
         # Inform the user that their attempt is incorrect and inform them of the remaining attempts left

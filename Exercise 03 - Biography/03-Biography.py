@@ -13,6 +13,7 @@ while True:
     if age_input.isdigit():
         age = int(age_input)
         break
+    # If age is an invalid number, print an appropriate message
     else:
         print("That's an invalid number. Please enter a valid age number.")
 
